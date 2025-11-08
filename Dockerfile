@@ -3,6 +3,10 @@
 
 FROM niketgupta2002/comfyui-wanvideo-runpod:v1.1
 
+# RunPod handler metadata
+LABEL com.runpod.handler="/handler.py"
+LABEL com.runpod.description="ComfyUI Video Generator (Wan 2.2)"
+
 # Set working directory
 WORKDIR /
 
@@ -16,6 +20,9 @@ COPY extra_model_paths.yaml /comfyui/extra_model_paths.yaml
 COPY handler.py /handler.py
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
+
+# Verify handler was copied successfully
+RUN ls -lh /handler.py && echo "✅ Handler copied successfully ($(du -h /handler.py | cut -f1))"
 
 # Set environment variables
 ENV COMFY_HOST=127.0.0.1:8188
