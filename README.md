@@ -162,6 +162,7 @@ upscale_models/
 - **Execution** (RTX 4090): ~$0.40/hour
 - **Idle**: $0 (auto-scales to zero)
 - **Per video**: ~$0.01-0.02 (30-60s execution)
+[![Runpod](https://api.runpod.io/badge/dseditor/runpodcomfyui)](https://console.runpod.io/hub/dseditor/runpodcomfyui)
 
 ## Troubleshooting
 
