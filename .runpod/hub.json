@@ -7,7 +7,7 @@
   "config": {
     "runsOn": "GPU",
     "containerDiskInGb": 20,
-    "gpuIds": "ADA_24",
+    "gpuIds": "RTX A4000,-NVIDIA RTX 5090",
     "gpuCount": 1,
     "allowedCudaVersions": ["12.8", "12.6"],
     "env": [

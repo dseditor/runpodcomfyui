@@ -55,3 +55,4 @@ secrets/
 # Test files
 test_input.json
 test_output/
+Example/
