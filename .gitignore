@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Models (stored in network volume)
+models/
+*.safetensors
+*.ckpt
+*.pth
+*.bin
+
+# Output
+output/
+*.mp4
+*.gif
+*.png
+*.jpg
+*.jpeg
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Credentials
+*.key
+*.pem
+.env
+secrets/
+
+# Test files
+test_input.json
+test_output/
