@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "basic_video_test",
+      "input": {
+        "images": [
+          {
+            "name": "start_frame.png",
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
+          }
+        ],
+        "workflow": {
+          "comment": "Simple test workflow for Wan 2.2 video generation"
+        }
+      },
+      "timeout": 600000
+    }
+  ],
+  "config": {
+    "gpuTypeId": "NVIDIA GeForce RTX 4090",
+    "gpuCount": 1,
+    "env": [
+      {
+        "key": "REFRESH_WORKER",
+        "value": "false"
+      },
+      {
+        "key": "COMFY_LOG_LEVEL",
+        "value": "INFO"
+      }
+    ],
+    "allowedCudaVersions": ["12.8", "12.6"]
+  }
+}
